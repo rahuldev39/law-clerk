@@ -1,0 +1,201 @@
+.lq-search-fileds {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+}
+.flex-fill {
+    flex: 1;
+}
+.search-select {
+    margin-right: 3px;
+    position: relative;
+    z-index: 10;
+}
+.search-field {
+    position: relative;
+    display: none;
+}
+.flex-fill {
+    flex: 1;
+}
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+.search-dropdown {
+    background-color: white;
+    margin-top: 1px;
+    padding: 6px 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 100%;
+}
+
+.search-dropdown ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.search-dropdown ul li {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: .15rem 1.5rem;
+    cursor: pointer;
+    font-size: 14.5px;
+}
+.search-dropdown ul li.search-help-section-header small {
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: block;
+}
+.search-dropdown ul li strong.col-tag {
+    font-weight: 600;
+    color: #040404;
+    font-size: 13px;
+        flex: 0 0 16.6666666667%;
+}
+.search-dropdown ul li .col-desc {
+    display: flex;
+    color: #757575;
+}
+.search-dropdown ul li .col-desc span {
+    width: 12em;
+    flex: 0 0 19em;
+    margin-right: 13px;
+}
+.search-dropdown ul li .col-desc em {
+    width: auto;
+    flex: 1 1 auto;
+}
+.select-btn {
+    height: 39px;
+    min-width: 131px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.lq-search-fileds #select-dropdown {
+    right: 0px;
+}
+#select-dropdown .card-body {
+    padding: .8rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.select-block {
+    margin-bottom: 15px;
+}
+.select-block strong {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 1px;
+    font-weight: 700;
+    color: #8d8d8f;
+}
+.select-block ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+.select-block ul li {
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.select-radio-inner {
+    display: flex;
+    font-size: 12px;
+}
+.select-radio-inner > span {
+    display: block;
+    min-width: 200px;
+}
+.select-block ul li label {
+    display: block;
+    margin-bottom: 0px;
+}
+.select-block ul li input[type="radio"] {
+    display: none;
+}
+.select-block ul li input[type="radio"] + span {
+    padding: 0px;
+    background-color: transparent;
+    display: block;
+    border-radius: 0px;
+    color: #0372b1;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#topnav.navbar-default {
+    background: #f5f7f8;
+    display: flex;
+    align-items: center;
+}
+#topnav .logo-area {
+    float: none;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.navbar-nav.toolbar{
+
+}
+#topnav #toolbar-search {
+    flex: 1;
+}
+.select-btn::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.search-dropdown ul li a{
+  display: flex;
+}
+#select-dropdown {
+    position: absolute;
+    top: 104%;
+    width: 100%;
+    min-width: 320px;
+
+}
+.lq-search-fileds.search-nav .search-dropdown {
+    box-shadow: 0px 4px 8px #d8d8d8;
+    border: 1px solid #e6e6e6;
+}
+.search-field.show {
+    display: flex !important;
+    background-color: transparent;
+}
+.search-field input {
+    padding-right: 35px;
+    margin-right: 2px;
+    webkit-box-shadow: 0 2px 4px rgba(126,142,177,.12);
+    box-shadow: 0 2px 4px rgba(64,70,82,.13);
+    border-width: 1px !important;
+    font-weight: 400;
+    border-style: solid !important;
+    line-height: 1.7;
+}

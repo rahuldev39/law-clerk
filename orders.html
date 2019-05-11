@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Legitquest Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' rel='stylesheet'>
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">        <!-- Font Awesome -->
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+    <link href="./assets/css/custom.css" type="text/css" rel="stylesheet">                                   <!-- Core CSS with all styles -->
+    <link href="./assets/css/search.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 10]>
+        <script src="assets/js/media.match.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <script src="assets/js/placeholder.min.js"></script>
+    <![endif]-->
+    <!-- The following CSS are included as plugins and can be removed if unused-->
+    </head>
+
+    <body class="animated-content infobar-overlay   sidebar-scroll">
+
+        <header id="topnav" class="navbar navbar-default navbar-fixed-top" role="banner">
+
+	<div class="logo-area">
+		<span id="trigger-sidebar" class="toolbar-trigger toolbar-icon-bg">
+			<a data-toggle="tooltips" data-placement="right" title="Toggle Sidebar">
+				<span class="icon-bg">
+					<i class="fa fa-arrow-left"></i>
+				</span>
+			</a>
+		</span>
+
+		<a class="navbar-brand" href="index.html">
+			<img class="img-white" alt="December" src="./assets/img/lq-logo-small.png">
+			<img class="img-dark" alt="December" src="./assets/img/lq-logo-small.png">
+		</a>
+
+    <div class="flex-fill hidden-xs" >
+      <div class="search-filed-box d-flex align-items-center lq-search-fileds search-nav">
+
+
+        <div class="position-relative flex-fill search-controls-containers">
+          <div id="free-text-box" class="search-field flex-fill show">
+            <div class="input-group input ">
+              <input  type="text" class="form-control search-input" placeholder="Search millions of legal authorities...">
+              <!--  <div class="input-group-btn">
+                  <button type="button" class="btn btn-white search-dropdown-btn">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                </div> -->
+            </div>
+
+            <div class="search-dropdown">
+              <ul class="" >
+                  <li class="search-help-section-header text-muted">
+                      <div  class=""><small class="text-uppercase">Search techniques</small></div>
+                  </li>
+                  <li><a>
+                    <strong class="col-2 col-tag">(+)</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Find documents containing all connected terms</span>
+                      <em  class="detail">personal + injury</em>
+                    </small></a>
+                  </li>
+                  <li><a>
+                    <strong class="col-2 col-tag">(-)</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Excludes documents</span>
+                      <em  class="detail">personal - injury
+                        <small>finds documents with the word “personal” without  “injury”</small>
+                      </em>
+                    </small></a>
+                  </li>
+                  <li><a>
+                    <strong class="col-2 col-tag">w/#</strong>
+                    <small class="col-10 col-desc">
+                      <span >Find documents which have terms within a given proximity of each other.</span>
+                      <em  class="detail">personal w/5 injury
+                      <small>finds documents with “personal” within five words of “injury”</small>
+
+                      </em>
+                    </small>
+                  </a></li>
+                  <li><a>
+                    <strong class="col-2 col-tag">!</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Stemming finds all words containing the root word</span>
+                      <em  class="detail">juris!
+                      <small>finds documents containing “jurisdiction”, “jurisprudence”, “juristic”, etc.</small>
+
+                      </em>
+                    </small>
+                  </a></li>
+                  <li><a>
+                    <strong class="col-2 col-tag">*</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Find similar words with variations on single characters</span>
+                      <em  class="detail">wom*n
+                      <small>find documents containing either “woman” or “women”</small>
+
+                      </em>
+                    </small></a></li>
+
+                  <li><a>
+                    <strong class="col-2 col-tag">Filter Within</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Any number of filter within the result</span>
+                      <em class="detail"></em>
+                    </small></a></li>
+                  <li><a>
+                    <strong class="col-2 col-tag">" "</strong>
+                    <small class="col-10 col-desc">
+                      <span  >Quote for the same phrase search</span>
+                      <em class="detail">"stop payment"; "non compliance of mandatory provisions"</em>
+                    </small></a></li>
+                  </ul>
+            </div>
+
+          </div>
+          <div id="citation-box" class="search-field flex-fill">
+            <input class="form-control journal-input search-input" placeholder="Please enter keyword">
+
+            <div class="search-dropdown">
+
+              <div class="citation-list-container">
+                <h4 class="text-center">Please enter your Citation in this format </h4>
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Supreme Court</strong>
+                        </li>
+                        <li>
+                        <span>AIR 1950 SC 1</span>
+                        </li>
+                        <li>
+                        <span>[1950 ] 1 SCR 64</span>
+                        </li><li>
+                        <span>JT 1986 (1) SC 178</span>
+                        </li>
+                        <li>
+                        <span>1981 (3) SCALE 1831</span>
+                        </li>
+                        <li>
+                        <span>(1970 ) 3 SCC 368</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Patna</strong>
+                        </li>
+                        <li>
+                        <span>AIR 2000 Pat 331</span>
+                        </li>
+                        <li>
+                        <span>2000 (3) BLJR 2184</span>
+                        </li><li>
+                        <span>2000 (3)PLJR 241</span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Delhi</strong>
+                        </li>
+                        <li>
+                        <span>1993 IVAD (Delhi ) 838</span>
+                        </li>
+                        <li>
+                        <span>AIR 1967 Delhi 65</span>
+                        </li><li>
+                        <span>3(1967 ) DLT 299</span>
+                        </li>
+                        <li>
+                        <span>1981 (2) DRJ 184</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Punjab & Haryana</strong>
+                        </li>
+                        <li>
+                        <span>AIR 2014 P&H 139</span>
+                        </li>
+                        <li>
+                        <span>56 PLR 12 (1954 )</span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Maharashtra</strong>
+                        </li>
+                        <li>
+                        <span>1997 (3) ALLMR 688</span>
+                        </li>
+                        <li>
+                        <span>AIR 1950 Bom 378</span>
+                        </li><li>
+                        <span>1982 (1) BomCR 236</span>
+                        </li>
+                        <li>
+                        <span>1981 (2) DRJ 184</span>
+                        </li>
+                        <li>
+                        <span>1963 MhLJ 503</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="citation-list">
+                      <ul>
+                        <li>
+                          <strong>Calcutta</strong>
+                        </li>
+                        <li>
+                        <span>AIR 1950 Cal 573</span>
+                        </li>
+                        <li>
+                        <span>(1950 ) 1 CALLT 341 (HC )</span>
+                        </li><li>
+                        <span>2010 (1) CHN 237</span>
+                        </li>
+                        <li>
+                        <span>1971 (1) CLJ 314</span>
+                        </li>
+                        <li>
+                        <span>54 CWN 189</span>
+                        </li>
+                        <li>
+                        <span>(1952) ILR 2 Cal 352</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+          <div id="judge-box" class="search-field flex-fill">
+            <input class="form-control" placeholder="Last name">
+            <input class="form-control" placeholder="First name">
+          </div>
+          <div id="party-box" class="search-field flex-fill">
+            <input class="form-control" placeholder="petitioner/respondent">
+          </div>
+          <div id="act-box" class="search-field flex-fill">
+            <input class="form-control" placeholder="Act Name">
+            <input class="form-control section-input" placeholder="Section">
+          </div>
+          <div id="act-search-box" class="search-field flex-fill">
+            <input class="form-control" placeholder="Search bare Act">
+          </div>
+
+          <div class="search-btn">
+            <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+        <div class="search-select">
+          <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+            All
+          </button>
+          <div class="collapse" id="select-dropdown">
+            <div class="card card-body">
+              <div class="select-block">
+                <strong>Case Law</strong>
+                <ul>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Free text search</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="free-text-box" checked>
+                          <span>All</span>
+                        </label>
+                      </div>
+
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Name-Year-Vol-Page</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="citation-box">
+                          <span>Citation</span>
+                        </label>
+                      </div>
+
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                          <span>Last name – first name</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="judge-box">
+                            <span>Judge Name</span>
+                          </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Petitioner - respondent</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="party-box">
+                          <span>Party Name</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Act name- Section</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="act-box">
+                          <span>Act Name</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="select-block">
+                <strong>Bare Act Search</strong>
+                <ul>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Search bare Act</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="act-search-box">
+                          <span>Act Name</span>
+                        </label>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	</div><!-- logo-area -->
+
+	<ul class="nav navbar-nav toolbar">
+
+		<li class="toolbar-icon-bg visible-xs-block" id="trigger-toolbar-search">
+			<a href="#"><span class="icon-bg"><i class="fa fa-search"></i></span></a>
+		</li>
+
+		<li class="dropdown toolbar-icon-bg hidden-xs">
+			<a href="#" class="dropdown-toggle nav-username" data-toggle="dropdown">
+				<img class="img-circle" src="assets/demo/avatar/avatar_16.png" alt="" /><span class="badge user-status badge-success">1</span>
+				<span class="hidden-sm">Jhone Doe</span>
+			</a>
+			<ul class="dropdown-menu userinfo">
+				<li><a href="#/"><i class="fa fa-user"></i><span>Profile</span></a></li>
+				<li><a href="#/"><i class="fa fa-wrench"></i><span>Account</span></a></li>
+				<li><a href="#/"><i class="fa fa-cog"></i><span>Settings</span></a></li>
+				<li class="divider"></li>
+
+				<li class="divider"></li>
+				<li><a href="#/"><i class="fa fa-power-off"></i><span>Sign Out</span></a></li>
+			</ul>
+		</li>
+
+        <li class="toolbar-icon-bg hidden-xs" id="trigger-fullscreen">
+            <a href="#" class="toggle-fullscreen"><span class="icon-bg"><i class="fa fa-arrows-alt"></i></span></i></a>
+        </li>
+
+   		<li class="dropdown toolbar-icon-bg">
+			<a href="#" class="hasnotifications dropdown-toggle" data-toggle='dropdown'><span class="icon-bg"><i class="fa fa-bell"></i></span><span class="badge badge-info">2</span></a>
+			<div class="dropdown-menu animated notifications">
+				<div class="topnav-dropdown-header">
+					<span>3 new notifications</span>
+				</div>
+				<div class="scroll-pane">
+					<ul class="media-list scroll-content">
+						<li class="media notification-success">
+							<a href="#">
+								<div class="media-left">
+									<span class="notification-icon"><i class="fa fa-lock"></i></span>
+								</div>
+								<div class="media-body">
+									<h4 class="notification-heading">Privacy settings have been changed.</h4>
+									<span class="notification-time">8 mins ago</span>
+								</div>
+							</a>
+						</li>
+						<li class="media notification-info">
+							<a href="#">
+								<div class="media-left">
+									<span class="notification-icon"><i class="fa fa-cart-plus"></i></span>
+								</div>
+								<div class="media-body">
+									<h4 class="notification-heading">A new order has been placed.</h4>
+									<span class="notification-time">24 mins ago</span>
+								</div>
+							</a>
+						</li>
+						<li class="media notification-teal">
+							<a href="#">
+								<div class="media-left">
+									<span class="notification-icon"><i class="fa fa-calendar"></i></span>
+								</div>
+								<div class="media-body">
+									<h4 class="notification-heading">New event started!</h4>
+									<span class="notification-time">16 hours ago</span>
+								</div>
+							</a>
+						</li>
+						<li class="media notification-indigo">
+							<a href="#">
+								<div class="media-left">
+									<span class="notification-icon"><i class="fa fa-gear"></i></span>
+								</div>
+								<div class="media-body">
+									<h4 class="notification-heading">New app settings updated.</h4>
+									<span class="notification-time">2 days ago</span>
+								</div>
+							</a>
+						</li>
+						<li class="media notification-danger">
+							<a href="#">
+								<div class="media-left">
+									<span class="notification-icon"><i class="fa fa-comments-o"></i></span>
+								</div>
+								<div class="media-body">
+									<h4 class="notification-heading">Jessi commented your post.</h4>
+									<span class="notification-time">4 days ago</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="topnav-dropdown-footer">
+					<a href="#">See all notifications</a>
+				</div>
+			</div>
+		</li>
+
+
+
+
+	</ul>
+
+</header>
+
+        <div id="wrapper">
+            <div id="layout-static">
+                <div class="static-sidebar-wrapper sidebar-cyan">
+                    <div class="static-sidebar">
+                        <div class="sidebar">
+
+	<div class="widget stay-on-collapse" id="widget-sidebar">
+        <nav role="navigation" class="widget-body">
+	<ul class="acc-menu">
+		<li class="nav-separator"><span>Navigation</span></li>
+    <li><a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+
+		<li><a href="javascript:;"><i class="fa fa-book"></i><span>Case</span></a>
+			<ul class="acc-menu">
+				<li><a href="#">All Cases</a></li>
+				<li><a href="#">Newly Assigned</a></li>
+        <li><a href="#">Inprogress</a></li>
+        <li><a href="#">Archives</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Add Cases</a></li>
+			</ul>
+		</li>
+<li><a href="#"><i class="fa fa-file-text-o"></i><span>Auto Causelist</span></a></li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>Auto Orders</span></a></li>
+<li><a href="javascript:;"><i class="fa fa-book"></i><span>Alert</span></a>
+  <ul class="acc-menu">
+    <li><a href="#">Case</a></li>
+    <li><a href="#">Act</a></li>
+    <li><a href="#">Gagette</a></li>
+    <li><a href="#">Appeal</a></li>
+  </ul>
+</li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>Dockets</span></a></li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>Calender</span></a></li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>Notes</span></a></li>
+<li><a href="javascript:;"><i class="fa fa-book"></i><span>Servies</span></a>
+  <ul class="acc-menu">
+    <li><a href="#">Translation</a></li>
+    <li><a href="#">Typing</a></li>
+    <li><a href="#">Templates</a></li>
+    <li><a href="#">Appeal</a></li>
+  </ul>
+</li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>News Feed</span></a></li>
+<li><a href="#"><i class="fa fa-bar-chart"></i><span>Profitbility</span></a></li>
+	</ul>
+</nav>
+    </div>
+
+</div>
+</div>
+</div>
+                <div class="static-content-wrapper">
+                    <div class="static-content">
+                        <div class="page-content">
+                            <ol class="breadcrumb">
+
+<li class=""><a href="index.html">Home</a></li>
+<li class="active"><a href="index.html">Orders</a></li>
+
+                            </ol>
+
+                            <div class="container-fluid">
+
+
+                              <div data-widget-group="group1">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
+				<div class="panel-heading">
+					<h2>Orders</h2>
+					<div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+
+          </div>
+				</div>
+				<div class="panel-body">
+
+            <div class="form-container">
+              <div class="row">
+                       <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Court Type</label>
+                               <select name="selector1" id="selector1" class="form-control">
+              									<option>Court Name 1</option>
+              									<option>Court Name 2</option>
+              									<option>Court Name 3</option>
+              									<option>Court Name 4</option>
+              								</select>
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Date</label>
+                               <input type="date" placeholder="Enter Data" class="form-control">
+                             </div>
+                         </div>
+
+                         <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Advocate</label>
+                               <input type="text" placeholder="Enter Advocate name" class="form-control">
+                             </div>
+                         </div>
+
+                     </div>
+
+
+
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Judge Name</label>
+                                   <input type="text" placeholder="Enter Judge Name" class="form-control">
+                                  </div>
+                              </div>
+                                     <div class="col-md-4">
+                                         <div class="form-group">
+                                             <label>Case No.</label>
+                                             <input type="text" placeholder="Enter Case No." class="form-control">
+                                           </div>
+                                       </div>
+
+
+
+
+                                   </div>
+
+
+
+
+            </div>
+
+				</div>
+
+        <div class="panel-footer text-right">
+					<a href="#" class="btn btn-default">Cancel</a>
+          <a href="#" class="btn btn-primary">Save</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+
+    </div>
+  </div>
+
+
+</div>
+
+
+                            </div> <!-- .container-fluid -->
+                        </div> <!-- #page-content -->
+                    </div>
+                    <footer role="contentinfo">
+    <div class="clearfix">
+        <ul class="list-unstyled list-inline pull-left">
+            <li><h6 style="margin: 0;">&copy; 2018 Legitquest</h6></li>
+        </ul>
+        <button class="pull-right btn btn-link btn-xs hidden-print" id="back-to-top"><i class="fa fa-arrow-up"></i></button>
+    </div>
+</footer>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
+
+        <script src="assets/js/jquery-1.10.2.min.js"></script> 							<!-- Load jQuery -->
+        <script src="assets/js/jqueryui-1.10.3.min.js"></script> 							<!-- Load jQueryUI -->
+        <script src="assets/js/bootstrap.min.js"></script> 								<!-- Load Bootstrap -->
+        <script src="assets/js/enquire.min.js"></script> 									<!-- Load Enquire -->
+
+        <script src="assets/plugins/velocityjs/velocity.min.js"></script>					<!-- Load Velocity for Animated Content -->
+        <script src="assets/plugins/velocityjs/velocity.ui.min.js"></script>
+
+
+        <script src="assets/plugins/nanoScroller/js/jquery.nanoscroller.min.js"></script> <!-- nano scroller -->
+
+        <script src="assets/js/application.js"></script>
+
+
+            <script type="text/javascript">
+                $('.search-controls-containers  .search-input').focus(function (e) {
+                  $('.search-dropdown').addClass('show');
+                  $('.search-overlay').addClass('show');
+                  $('.lq-search-fileds').addClass('index');
+                  $('.search-dropdown-btn').addClass('active');
+                  e.stopPropagation();
+                });
+
+
+
+                $('.select-btn').click(function() {
+                  $('.search-dropdown').removeClass('show');
+                  $('.search-overlay').removeClass('show');
+                  $('.lq-search-fileds').removeClass('index');
+                  $('.search-dropdown-btn').removeClass('active');
+                });
+                $('.search-dropdown-btn').click(function(e) {
+                  $('.search-dropdown').toggleClass('show');
+                  $('.search-overlay').toggleClass('show');
+                  $('.lq-search-fileds').toggleClass('index');
+                  $('.search-dropdown-btn').toggleClass('active');
+                  e.stopPropagation();
+                })
+                $('.search-controls-containers').click(function (e) {
+                  e.stopPropagation();
+                });
+                $(document).click(function(e) {
+                  $('.search-dropdown').removeClass('show');
+                  $('.search-overlay').removeClass('show');
+                  $('.lq-search-fileds').removeClass('index');
+                  $('.search-dropdown-btn').removeClass('active');
+                });
+
+                $('.search-controls-containers  .search-input').keyup(function() {
+                    if($(this).val() == "")
+                    {
+                      $('.search-dropdown').addClass('show');
+                      $('.search-overlay').addClass('show');
+                      $('.lq-search-fileds').addClass('index');
+                      $('.search-dropdown-btn').addClass('active');
+                    }
+                    else {
+                      $('.search-dropdown').removeClass('show');
+                      $('.search-overlay').removeClass('show');
+                      $('.lq-search-fileds').removeClass('index');
+                      $('.search-dropdown-btn').removeClass('active');
+                    }
+                });
+
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                $("input[name=search-radio]").on( "change", function() {
+
+                    $('body').addClass("test")
+
+                     var test = $(this).val();
+                     var sText = $(this).next().text();
+
+                     $(".search-field").removeClass('show');
+                     $("#"+test).addClass('show');
+                     $(".select-btn").text(sText)
+                } );
+
+                $(".select-radio label span").on("click", function() {
+                  $("#select-dropdown").removeClass("show");
+
+                });
+
+                $(document).on('click',function(e) {
+                    e.stopPropagation();
+                    var container = $("#select-dropdown");
+
+                    //check if the clicked area is dropDown or not
+                    if (container.has(e.target).length === 0) {
+                        $('#select-dropdown').removeClass('show');
+                    }
+
+                });
+
+
+              });
+
+
+            </script>
+
+    </body>
+
+</html>
