@@ -486,7 +486,7 @@
     <nav role="navigation" class="widget-body">
   <ul class="acc-menu">
   <li class="nav-separator"><span>Navigation</span></li>
-  <li><a  href="./dashboard.html"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+  <li class="active"><a href="./dashboard.html"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
 
   <li><a href="javascript:;"><i class="fa fa-book"></i><span>Case</span></a>
   <ul class="acc-menu">
@@ -500,7 +500,7 @@
   </li>
   <li><a href="./cause-list.html"><i class="fa fa-file-text-o"></i><span>Auto Causelist</span></a></li>
   <li><a href="./orders.html"><i class="fa fa-bar-chart"></i><span>Auto Orders</span></a></li>
-  <li class="active"><a href="javascript:;"><i class="fa fa-book"></i><span>Alert</span></a>
+  <li ><a href="javascript:;"><i class="fa fa-book"></i><span>Alert</span></a>
   <ul class="acc-menu">
   <li><a href="./alert.html">Case</a></li>
   <li><a href="./alert.html">Act</a></li>
@@ -534,7 +534,7 @@
                             <ol class="breadcrumb">
 
 <li class=""><a href="index.html">Home</a></li>
-<li class="active"><a href="index.html">Alert</a></li>
+<li class="active"><a href="index.html">Dashboard</a></li>
 
                             </ol>
 
@@ -543,7 +543,8 @@
 
                               <div data-widget-group="group1">
 	<div class="row">
-		<div class="col-md-12">
+
+    <div class="col-md-6">
 
 			<div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
 				<div class="panel-heading">
@@ -556,38 +557,58 @@
 
             <div class="form-container">
               <div class="row">
-                       <div class="col-md-4">
+                       <div class="col-md-6">
                            <div class="form-group">
                                <label>Subject</label>
-                               <input type="Text" placeholder="Enter Subject" class="form-control">
+                               <select name="" class="form-control">
+                                 <option value="">Select Subject</option>
+                                  <option value="">Constitution</option>
+                                  <option value="">Criminal</option>
+                                  <option value="">IPR</option>
+                               </select>
                              </div>
                          </div>
-                         <div class="col-md-4">
+                         <div class="col-md-6">
                            <div class="form-group">
                                <label>Act</label>
-                               <input type="text" placeholder="Enter Act" class="form-control">
+                               <select name="" class="form-control">
+                                 <option value="">Select Act</option>
+                                  <option value="">Evidence Act</option>
+                                  <option value="">PMLA</option>
+                                  <option value="">Indian Penal code</option>
+                               </select>
                              </div>
                          </div>
 
-                         <div class="col-md-4">
-                           <div class="form-group">
-                               <label>Section</label>
-                               <input type="text" placeholder="Enter Section" class="form-control">
-                             </div>
-                         </div>
 
                      </div>
 
 
 
                             <div class="row">
-                              <div class="col-md-4">
+                              <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Gagette</label>
-                                   <input type="text" placeholder="Enter Judge Name" class="form-control">
+                                    <label>Gazette</label>
+                                    <select name="" class="form-control">
+                                      <option value="">Select Gagette</option>
+                                       <option value="">Ministry</option>
+                                       <option value="">Gazette No.</option>
+                                       <option value="">Date</option>
+                                    </select>
                                   </div>
                               </div>
 
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Section</label>
+                                    <select name="" class="form-control">
+                                      <option value="">Select Section</option>
+                                       <option value="">124A</option>
+                                       <option value="">131</option>
+                                       <option value="">140</option>
+                                    </select>
+                                  </div>
+                              </div>
 
 
 
@@ -607,6 +628,67 @@
 				</div>
 			</div>
 		</div>
+
+    <div class="col-md-6">
+
+			<div class="panel panel-bluegraylight" data-widget='{"draggable": "false"}'>
+				<div class="panel-heading">
+					<h2>Analytics</h2>
+					<div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+
+          </div>
+				</div>
+				<div class="panel-body">
+
+            <div class="form-container">
+              <div class="row">
+                       <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Date</label>
+                               <input type="date" placeholder="Enter Date" class="form-control">
+                             </div>
+                         </div>
+                         <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Court</label>
+                               <input type="text" placeholder="Enter Court" class="form-control">
+                             </div>
+                         </div>
+
+                         <div class="col-md-4">
+                           <div class="form-group">
+                               <label>Status</label>
+                               <select name="" class="form-control">
+                                 <option value="">Select Status</option>
+                                  <option value="">Active</option>
+                                  <option value="">Inactive</option>
+                               </select>
+                             </div>
+                         </div>
+
+
+                     </div>
+
+                     <div class="graph-box">
+                       <img src="./assets/img/graph.jpg" alt="" style="width:100%">
+                     </div>
+
+
+
+
+            </div>
+
+				</div>
+
+        <div class="panel-footer text-right">
+					<a href="#" class="btn btn-default">Cancel</a>
+          <a href="#" class="btn btn-primary">Save</a>
+				</div>
+			</div>
+		</div>
+
+
+
 	</div>
 
   <div class="row">
